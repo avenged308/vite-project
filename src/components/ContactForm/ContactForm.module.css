@@ -1,0 +1,100 @@
+/* Обертка компонента (контентная часть страницы) */
+.mainContainer {
+  min-height: calc(100vh - 120px); /* запас под header+footer, если они есть */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Карточка формы */
+.formContainer {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* Заголовок */
+.formTitle {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Форма */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Группа */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Лейблы */
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Поля */
+.input {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+}
+
+/* Ошибки */
+.error {
+  color: #b91c1c;
+  font-size: 12px;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Кнопка */
+.submitBtn {
+  margin-top: 6px;
+  padding: 11px 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a6cf7;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #3a56d4;
+  transform: translateY(-1px);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}

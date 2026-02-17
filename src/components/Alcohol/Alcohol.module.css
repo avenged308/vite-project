@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #2c2c2c;
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер картинки */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Сама картинка */
+.container > img {
+  max-height: 400px;
+  width: auto;
+  max-width: 80%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Кнопка */
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 10px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #8b0000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
